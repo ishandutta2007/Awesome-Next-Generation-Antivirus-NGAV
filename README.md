@@ -30,7 +30,9 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-products)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
 
@@ -40,68 +42,24 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The global Endpoint Security and Next-Generation Antivirus (NGAV) market is valued at approximately **$18B to $23B in 2026** (projected to reach $35B–$40B+ by the early 2030s at an estimated CAGR of **9%–12%**). The sector is **moderately concentrated to oligopolistic** at the top enterprise tier—dominated by heavyweight platform players such as Microsoft, CrowdStrike, and Palo Alto Networks benefiting from strong platform integration and cloud telemetry flywheels—while remaining **moderately fragmented** across mid-market, SMB, and specialized Linux/OT infrastructure where niche NGAV and emerging open-source detection engineering agents compete.
+
 ## SaaS/Hosted Platforms
 
-
-
-- **[CrowdStrike Falcon Prevent](https://www.crowdstrike.com/)**  
-
-  Cloud-native NGAV powered by the Falcon platform's lightweight sensor; uses AI and behavioral analytics to block malware, ransomware, and fileless attacks without signature updates.
-
-
-
-- **[SentinelOne Singularity Control](https://www.sentinelone.com/)**  
-
-  Autonomous AI-powered NGAV with behavioral AI models that detect and respond to threats in real-time; includes rollback and remote shell capabilities.
-
-
-
-- **[Microsoft Defender Antivirus](https://www.microsoft.com/en-us/security/business/microsoft-defender)**  
-
-  Built-in NGAV for Windows with cloud-delivered protection, behavior monitoring, and machine learning; integrated with Defender for Endpoint for EDR capabilities.
-
-
-
-- **[Sophos Intercept X](https://www.sophos.com/)**  
-
-  NGAV with deep learning malware detection, anti-ransomware (CryptoGuard), and exploit prevention; available in endpoint and server editions.
-
-
-
-- **[Trend Micro Apex One](https://www.trendmicro.com/)**  
-
-  Enterprise endpoint protection with NGAV, EDR, and XDR capabilities; includes virtual patching and application control.
-
-
-
-- **[Carbon Black Endpoint](https://www.broadcom.com/)**  
-
-  VMware/Broadcom's endpoint protection with behavioral detection, NGAV, and EDR capabilities; positioned for enterprise environments.
-
-
-
-- **[Bitdefender GravityZone](https://www.bitdefender.com/)**  
-
-  Business endpoint security with layered NGAV (machine learning, behavioral analysis, anti-exploit) and ransomware remediation.
-
-
-
-- **[Trellix Endpoint](https://www.trellix.com/)**  
-
-  Endpoint protection suite (formerly McAfee/FireEye) with NGAV, EDR, and threat intelligence integration.
-
-
-
-- **[Malwarebytes Endpoint Protection](https://www.malwarebytes.com/)**  
-
-  Endpoint security with anti-malware, anti-exploit, and ransomware mitigation; positioned for small to mid-sized teams.
-
-
-
-- **[Cortex XDR](https://www.paloaltonetworks.com/)**  
-
-  Palo Alto's extended detection and response platform with NGAV capabilities, behavioral analytics, and cross-domain correlation.
-
+| Product | Company Size / Valuation | Starting Pricing | Free Tier / Free Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Defender Antivirus](https://www.microsoft.com/en-us/security/business/microsoft-defender)** | ~$3.1T Market Cap / >$245B Rev | $3.00/user/month (Standalone Defender for Endpoint P1) | Built-in free on Windows (consumer edition); Enterprise P1/P2 has a 90-day free trial (up to 250 licenses) | Built-in NGAV for Windows with cloud-delivered protection, behavior monitoring, and machine learning; integrated with Defender for Endpoint for EDR capabilities. |
+| **[Carbon Black Endpoint](https://www.broadcom.com/)** | ~$800B Market Cap (Broadcom) / ~$51B Rev | ~$26.00/endpoint/year (~$2.17/endpoint/mo) | 30-day free trial (requires enterprise partner/sales request; full feature access for test lab) | Broadcom/VMware's endpoint protection with behavioral detection, NGAV, and EDR capabilities; positioned for enterprise environments. |
+| **[Cortex XDR](https://www.paloaltonetworks.com/)** | ~$115B Market Cap / ~$8B Rev | ~$70.00/endpoint/year (~$5.83/endpoint/mo MSRP) | 30-day free trial (full cloud management console and agent testing for up to 50 endpoints) | Palo Alto's extended detection and response platform with NGAV capabilities, behavioral analytics, and cross-domain correlation. |
+| **[CrowdStrike Falcon Prevent](https://www.crowdstrike.com/)** | ~$75B Market Cap / ~$3.9B Rev | $8.99/device/month ($59.99/device/year for Falcon Go) | 15-day free trial (Falcon Pro/Go, full prevention access for up to 100 endpoints) | Cloud-native NGAV powered by the Falcon platform's lightweight sensor; uses AI and behavioral analytics to block malware, ransomware, and fileless attacks without signature updates. |
+| **[SentinelOne Singularity Control](https://www.sentinelone.com/)** | ~$7.5B Market Cap / ~$800M Rev | $6.00/endpoint/month ($69.00/endpoint/year for Singularity Core) | 30-day free trial (includes full behavioral NGAV, autonomous mitigation, and rollback for test endpoints) | Autonomous AI-powered NGAV with behavioral AI models that detect and respond to threats in real-time; includes rollback and remote shell capabilities. |
+| **[Trend Micro Apex One](https://www.trendmicro.com/)** | ~$6.5B Market Cap / ~$1.7B Rev | ~$28.50/user/year (~$2.38/user/mo) | 30-day free trial (includes complete SaaS console and protection for up to 100 seats) | Enterprise endpoint protection with NGAV, EDR, and XDR capabilities; includes virtual patching and application control. |
+| **[Sophos Intercept X](https://www.sophos.com/)** | ~$4.0B Valuation (Thoma Bravo) / ~$1.2B Rev | $28.00/user/year (~$2.33/user/mo for Advanced) | 30-day free trial (full access to Sophos Central management and all Intercept X features) | NGAV with deep learning malware detection, anti-ransomware (CryptoGuard), and exploit prevention; available in endpoint and server editions. |
+| **[Trellix Endpoint](https://www.trellix.com/)** | ~$1.8B Rev (Symphony Technology Group) | ~$42.00/endpoint/year (~$3.50/endpoint/mo) | 30-day free trial (guided trial with cloud ePO management for enterprise evaluation) | Endpoint protection suite (formerly McAfee/FireEye) with NGAV, EDR, and threat intelligence integration. |
+| **[Malwarebytes Endpoint Protection](https://www.malwarebytes.com/)** | ~$1.5B Valuation / ~$250M Rev | $69.99/device/year (~$5.83/device/mo) | 14-day free trial (full multi-vector protection & cloud console for up to 100 devices) | Endpoint security with anti-malware, anti-exploit, and ransomware mitigation; positioned for small to mid-sized teams. |
+| **[Bitdefender GravityZone](https://www.bitdefender.com/)** | ~$1.2B Valuation / ~$220M Rev | $20.99/device/year (~$1.75/device/mo for Business Security) | 30-day free trial (full GravityZone Cloud Console for up to 100 devices) | Business endpoint security with layered NGAV (machine learning, behavioral analysis, anti-exploit) and ransomware remediation. |
 
 
 ## Open-Source GitHub Projects
