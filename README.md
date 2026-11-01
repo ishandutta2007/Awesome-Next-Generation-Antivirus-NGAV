@@ -64,62 +64,50 @@ The global Endpoint Security and Next-Generation Antivirus (NGAV) market is valu
 
 ## Open-Source GitHub Projects
 
+- **[osquery](https://github.com/osquery/osquery)** [![GitHub stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)  
+  Operating system instrumentation framework (SQL-based analytics) that exposes an entire operating system as a high-performance relational database. Used extensively in endpoint security telemetry, continuous behavioral monitoring, compliance checking, and detection engines.
 
+- **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)  
+  Open-source security platform providing unified XDR, EDR, and endpoint security. Features signature and behavioral malware detection, file integrity monitoring (FIM), anomaly detection, rootkit detection, and real-time active response actions.
 
-### Linux-Focused NGAV/EDR
+- **[YARA](https://github.com/VirusTotal/yara)** [![GitHub stars](https://img.shields.io/github/stars/VirusTotal/yara?style=social&color=white)](https://github.com/VirusTotal/yara/stargazers)  
+  The de facto pattern matching Swiss army knife for malware researchers, behavioral detection rules, and NGAV engines. Used across nearly every modern open-source and commercial antivirus pipeline to classify and identify malware artifacts.
 
+- **[ClamAV](https://github.com/Cisco-Talos/clamav)** [![GitHub stars](https://img.shields.io/github/stars/Cisco-Talos/clamav?style=social&color=white)](https://github.com/Cisco-Talos/clamav/stargazers)  
+  The long-standing open-source antivirus engine toolkit (GPL) designed for trojan, virus, and malware detection; provides a multi-threaded daemon, command-line scanner, and signature database serving as foundational scanning plumbing for higher-level security tools.
 
+- **[Tracee](https://github.com/aquasecurity/tracee)** [![GitHub stars](https://img.shields.io/github/stars/aquasecurity/tracee?style=social&color=white)](https://github.com/aquasecurity/tracee/stargazers)  
+  Linux runtime security and behavioral detection engine powered by eBPF. Captures kernel-level system events and evaluates threat signatures and MITRE ATT&CK behaviors in real time to detect malware, container breakouts, and suspicious process executions.
 
-- **[Warden](https://github.com/Spellskite-coding/Warden)**  
+- **[Velociraptor](https://github.com/Velocidex/velociraptor)** [![GitHub stars](https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white)](https://github.com/Velocidex/velociraptor/stargazers)  
+  Advanced digital forensics and endpoint incident response (DFIR) platform with continuous endpoint monitoring capabilities, endpoint telemetry collection, and deep VQL-based forensic investigation queries.
 
-  The most security-hardened open-source **EDR/NGAV for Linux workstations** (Rust) . Features: **real-time fanotify-based blocking** (denies malicious file opens before execution) ; **YARA scanning**; **ransomware detection** via per-directory and global thresholds; quarantine with cross-process manifest locking; setuid-bit stripping; **hardened systemd sandboxing** (ProtectSystem=strict, NoNewPrivileges, RestrictSUIDSGID) . **Security model validated through adversarial testing**: the project documents real bypasses found and fixed—package-manager spoofing, fork-per-file ransomware across directories, unprivileged auto-quarantine bypass, and overlong-filename quarantine bypass . **Honest limitation**: **no kernel self-protection or anti-tamper**—a privileged attacker can stop it . **Best for Linux workstations** wanting hardened, inspectable protection with real forensic value—not a replacement for commercial EDR on Windows/macOS.
+- **[OpenEDR](https://github.com/ComodoSecurity/openedr)** [![GitHub stars](https://img.shields.io/github/stars/ComodoSecurity/openedr?style=social&color=white)](https://github.com/ComodoSecurity/openedr/stargazers)  
+  Full-featured open-source endpoint detection and response agent (Windows/Linux) that continuously analyzes behavioral telemetry, process creation, file modifications, and network connections to detect evasive malware and fileless attacks.
 
+- **[Fibratus](https://github.com/rabbitstack/fibratus)** [![GitHub stars](https://img.shields.io/github/stars/rabbitstack/fibratus?style=social&color=white)](https://github.com/rabbitstack/fibratus/stargazers)  
+  Windows-only behavioral detection and kernel event-driven monitoring engine on ETW (Event Tracing for Windows); combines behavioral rules with YARA in-memory scanning, filament-based Python detection logic, and process execution tracking.
 
+- **[Rustinel](https://github.com/Karib0u/rustinel)** [![GitHub stars](https://img.shields.io/github/stars/Karib0u/rustinel?style=social&color=white)](https://github.com/Karib0u/rustinel/stargazers)  
+  Cross-platform (Windows/Linux/macOS) endpoint detection agent written in Rust that normalizes ETW, eBPF, and Endpoint Security telemetry and evaluates Sigma rules, YARA signatures, and IOC lists, outputting alerts locally in ECS NDJSON format without cloud reliance.
 
-- **[AegorX](https://github.com/jacobtblalock3-cmd/AegorX)**  
+- **[owLSM](https://github.com/Cybereason-Public/owLSM)** [![GitHub stars](https://img.shields.io/github/stars/Cybereason-Public/owLSM?style=social&color=white)](https://github.com/Cybereason-Public/owLSM/stargazers)  
+  Kernel-level behavioral prevention research project running Sigma-like behavioral rules directly inside the Linux kernel via eBPF LSM (Linux Security Modules) hooks to proactively block malicious operations in real time.
 
-  Linux-focused **NGAV with signatures, YARA, ML, and real-time protection** (Python, Apache-2.0) . Features: **fanotify blocking mode** (root: denies file opens until scanned) ; inotify watch mode (unprivileged: scans and quarantines) ; **signed threat feeds** (Ed25519) with YARA rules embedded and hot-reloaded; **hash-chained audit log**; terminal dashboard; systemd unit for persistent monitoring . **Best for Linux servers and workstations** wanting a scriptable, signed-feed NGAV with real-time blocking—but it is Python-based and less hardened than Warden.
+- **[Warden](https://github.com/Spellskite-coding/Warden)** [![GitHub stars](https://img.shields.io/github/stars/Spellskite-coding/Warden?style=social&color=white)](https://github.com/Spellskite-coding/Warden/stargazers)  
+  Hardened open-source EDR/NGAV for Linux workstations (Rust) featuring real-time fanotify-based execution blocking (denies malicious file opens before execution), YARA rule scanning, heuristic ransomware detection via directory encryption thresholds, and hardened systemd sandboxing.
 
+- **[Amaru](https://github.com/CripterHack/Amaru)** [![GitHub stars](https://img.shields.io/github/stars/CripterHack/Amaru?style=social&color=white)](https://github.com/CripterHack/Amaru/stargazers)  
+  Open-source antivirus for Windows 11 (Rust with Tauri GUI) utilizing real-time file monitoring, YARA rule matching, Radare2 static analysis for PE headers/suspicious strings, and Windows Filtering Platform (WFP) kernel-level file filtering.
 
+- **[Sentinel Antivirus](https://github.com/mukti-sys/sentinel-antivirus)** [![GitHub stars](https://img.shields.io/github/stars/mukti-sys/sentinel-antivirus?style=social&color=white)](https://github.com/mukti-sys/sentinel-antivirus/stargazers)  
+  Cross-platform modular antivirus engine (Python, Windows/Linux/macOS) featuring YARA rules, PE machine learning classifiers, sub-100ms in-memory emulation sandboxing, Job Object detonation sandboxing, and interactive management dashboards.
 
-- **[OTX-Sec](https://github.com/AnorialTheReal/otx-sec)**  
+- **[OTX-Sec](https://github.com/AnorialTheReal/otx-sec)** [![GitHub stars](https://img.shields.io/github/stars/AnorialTheReal/otx-sec?style=social&color=white)](https://github.com/AnorialTheReal/otx-sec/stargazers)  
+  Linux antivirus and threat intelligence enrichment platform providing file/process/network monitoring, AlienVault OTX, VirusTotal, and MalwareBazaar lookups, static PE entropy scanning, and GUI threat review.
 
-  Linux antivirus and threat intelligence platform (AGPL-3.0, **early alpha v0.1.1**) . Features: file/process/network monitoring; **threat intelligence lookups** (AlienVault OTX, VirusTotal, MalwareBazaar, URLHaus) ; YARA rules; hash reputation; static analysis with entropy and suspicious string detection; quarantine support; GUI event review . **Critical caveat**: "should not be used as the only antivirus solution protecting production systems" . **Best for threat intelligence enrichment** on Linux—but not production-ready for primary protection.
-
-
-
-### Windows-Focused NGAV
-
-
-
-- **[Amaru](https://github.com/CripterHack/Amaru)**  
-
-  Open-source **antivirus for Windows 11** (Rust, Tauri UI) . Features: **real-time file monitoring** via `notify-rs` + ClamAV; **YARA rule engine** (custom and signed rules) ; **Radare2 static analysis** for PE headers and suspicious strings; **Windows Filtering Platform (WFP)** kernel-level file filtering; modern Tauri/Svelte UI . **Critical caveat**: "experimental, in-progress version… should not be used in production environments" . **Best for Windows 11 users** wanting a modern, Rust-powered ClamAV frontend with YARA and static analysis—but not ready for production reliance .
-
-
-
-- **[Sentinel Antivirus](https://github.com/mukti-sys/sentinel-antivirus)**  
-
-  Cross-platform **antivirus engine** (Python, Windows/Linux/macOS) with **YARA scanning, PE ML classifier, and kernel minifilter driver** . Features: **in-memory emulation sandbox** (<100ms, zero host risk) ; **Job Object detonation sandbox** with CPU/RAM caps; hybrid analysis (emulation first, fallback to detonation) ; interactive GUI dashboard; headless CLI; 342-test unit suite . **Best for security researchers** wanting a sandbox analysis toolkit alongside scanning—but it is a Python application, not a hardened kernel-level NGAV.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Fibratus** — Windows-only behavioral detection engine on ETW kernel telemetry; combines behavioral rules with YARA memory scanning and Python "filaments" for custom detections . **Needs admin/SYSTEM rights**; best treated as detection engineering and forensics tooling, not a hardened production sensor .
-
-- **Rustinel** — Cross-platform (Windows/Linux/macOS) endpoint detection agent that normalizes ETW/eBPF/Endpoint Security telemetry and evaluates Sigma rules, YARA signatures, and IOC lists; alerts written to local ECS NDJSON files (no vendor cloud) . Apache 2.0 . **Explicitly lacks kernel self-protection and anti-tamper**—a privileged attacker can stop it .
-
-- **owLSM** — Cybereason's public research project running Sigma-like rules **inside the Linux kernel** via eBPF LSM hooks to block malicious activity in real-time . **Most production-advanced** of the three EDR projects, but prevention rules require per-environment tuning and Sigma rules do not port automatically .
-
-- **ClamAV** — The long-standing open-source antivirus toolkit (GPL) designed primarily for **email gateway scanning**; provides a multi-threaded daemon and command-line scanner . **Not an NGAV**—it is signature-based and does not provide behavioral detection or real-time endpoint protection. The foundation from which ClamWin and Amaru build.
-
-
-
-**Frameworks for building custom systems**: For **hardened Linux workstation protection**, Warden provides the most security-conscious open-source NGAV/EDR with real-time blocking and documented adversarial testing . For **Linux servers with signed feeds**, AegorX . For **Windows 11 with ClamAV/YARA/Radare2**, Amaru (experimental) . For **cross-platform scanning with sandbox analysis**, Sentinel Antivirus . **None of these replace CrowdStrike Falcon Prevent or SentinelOne Singularity** for enterprise endpoint protection—they are detection engineering tools and second-opinion scanners, not hardened commercial NGAV suites .
-
+- **[AegorX](https://github.com/jacobtblalock3-cmd/AegorX)** [![GitHub stars](https://img.shields.io/github/stars/jacobtblalock3-cmd/AegorX?style=social&color=white)](https://github.com/jacobtblalock3-cmd/AegorX/stargazers)  
+  Linux-focused NGAV with signature scanning, YARA, ML, and real-time fanotify blocking mode, accompanied by Ed25519-signed threat feeds, hash-chained audit logging, and terminal dashboards.
 
 
 ## How to Contribute
